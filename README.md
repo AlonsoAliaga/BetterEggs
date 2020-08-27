@@ -5,7 +5,7 @@ This plugin adds new interesting way to reward your players.\
 Create unlimited eggs and make your players walk/explore to hatch them.
 
 ## Resources
-- [Spigot resource](https://www.spigotmc.org/resources/X/)
+- [Spigot resource](https://www.spigotmc.org/resources/83213/)
 - [Issue tracker](https://github.com/AlonsoAliaga/BetterEggs/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
 - [bStats](https://bstats.org/plugin/bukkit/BetterEggs)

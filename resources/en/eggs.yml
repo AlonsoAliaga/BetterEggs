@@ -1,0 +1,276 @@
+#This is an example with 4 default eggs configurations.
+#You are meant to modify all of them to fit your server needs.
+Eggs:
+  food-egg:
+    Enabled: true
+    Blocks: 350
+    Min-amount: 1
+    Max-amount: 2
+    Messages:
+      No-permission: '&cYou are not allowed to open this egg :('
+      Open-nothing: '&aYou opened a food egg. You didn''t find anything :('
+      Open-reward: '&aYou opened a food egg and received some rewards. Check the floor just in case!'
+    Not-ready:
+      Lore:
+      - '&7This is a Food Egg.'
+      - '&r'
+      - '&7Total blocks: &f{TOTAL}'
+      - '&7Remaining blocks: &f{REMAINING}'
+      Displayname: '&d&lFood Egg &7({REMAINING})'
+    Name: Food Egg
+    Ready:
+      Lore:
+      - '&6Egg is ready to hatch!'
+      - '&r'
+      - '&7Blocks walked: &f{TOTAL}'
+      Displayname: '&d&lFood Egg &7(Ready to hatch)'
+    Textures:
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEzYTI3OGFlOTkwMmY3YzE1YmYzOTY5OWM2YTE0MjYxNDI1Y2NhZmVkYWIyNGZhNmE4NTljNDE1YTMwNWQ0YSJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA5NTU4N2FhNTY1ODM3N2VmYmU1ZmY3ZGFmNTRmZWZmZTZkNWY2YmRhYmEzZGMxOWVlN2QyZjE4NjI2MjQ3ZCJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ1MGZlMTVhMjEyODY0OGM3YmQxYTk4NWMzMjBiYWRiZmRmNmViYjQ2ODJjYWM0OTEyOTA5NjIwY2NmIn19fQ==
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDYwZjY5NTU1N2YxYzEzZTNlNjJlNWNhMDVmYWY0YTczMGRiNzcyYzhmYWIxZjA3MmE3MzI5N2YyMCJ9fX0=
+    Gui-displayname: '&d&lFood Egg'
+    Permission: bettereggs.egg.food-egg
+    Items:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: COOKED_CHICKEN
+      amount: 19
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: COOKED_PORKCHOP
+      amount: 20
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: CAKE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: COOKIE
+      amount: 18
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: BAKED_POTATO
+      amount: 17
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: APPLE
+      amount: 15
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: COOKED_BEEF
+      amount: 14
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: BREAD
+      amount: 19
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: GOLDEN_APPLE
+      amount: 5
+    Commands:
+    #Format "DISPLAY|COMMAND" Available placeholders here are: {PLAYER} replaced with player name.
+    #{WORLD} replaced with player world name. {BLOCKS} replaced with amount of blocks the egg required to hatch.
+    - "&a$1,000|money add {PLAYER} 1000"
+    Auto-hatch: true
+  iron-egg:
+    Enabled: true
+    Blocks: 600
+    Gui-displayname: '&f&lIron egg'
+    Min-amount: 1
+    Max-amount: 2
+    Messages:
+      No-permission: '&cYou are not allowed to open this egg :('
+      Open-nothing: '&aYou opened a iron egg. You didn''t find anything :('
+      Open-reward: '&aYou opened a iron egg and received some rewards. Check the floor just in case!'
+    Not-ready:
+      Lore:
+      - '&7This is a Iron Egg.'
+      - '&r'
+      - '&7Total blocks: &f{TOTAL}'
+      - '&7Remaining blocks: &f{REMAINING}'
+      Displayname: '&f&lIron Egg &7({REMAINING})'
+    Name: Iron Egg
+    Ready:
+      Lore:
+      - '&6Egg is ready to hatch!'
+      - '&r'
+      - '&7Blocks walked: &f{TOTAL}'
+      Displayname: '&f&liron egg &7(Ready to hatch)'
+    Textures:
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmOTUxMDUwY2NkMWM3M2ZlZTRlMTM4Yzk1M2E0MmYwYzA3OGE5MmVkOGU2OTI2OTZiZjRhNjM5MTIyMDhkYyJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk4MmIzYmRmZTJmMGZjMDQ0MzliMGJmMGU3OWZiZDg2OWE0NmZmNzMzOTZkMzQ1OWE1YzdhNTE4NTdiMzMyNCJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWYwMjU2NGM0YzI5NjM1MGUxZGE5MzJlYTZiZDc5ZjFlYzAzZGExM2Y0YTQ5ZTliODBmOTZjOWJiOTAzZGNhZiJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRmOTlmNTA5YTRmMTU3NjM4YzNhOWM3NzViZmIzZDdiNjJlNzgxZTYxMjQxMDhmNjQ2NTExNWY4YTQxMmI1ZiJ9fX0=
+    Auto-hatch: true
+    Permission: bettereggs.egg.iron-egg
+    Items:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_HELMET
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_CHESTPLATE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_LEGGINGS
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_BOOTS
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_SWORD
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_AXE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_PICKAXE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_INGOT
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_BLOCK
+    Commands: []
+  diamond-egg:
+    Enabled: true
+    Name: Diamond Egg
+    Min-amount: 1
+    Max-amount: 2
+    Gui-displayname: "&b&lDiamond Egg"
+    Not-ready:
+      Displayname: "&b&lDiamond Egg &7({REMAINING})"
+      Lore:
+      - "&7This is a Diamond Egg."
+      - "&r"
+      - "&7Total blocks: &f{TOTAL}"
+      - "&7Remaining blocks: &f{REMAINING}"
+    Ready:
+      Displayname: "&b&lDiamond Egg &7(Ready to hatch)"
+      Lore:
+      - "&6Egg is ready to hatch!"
+      - "&r"
+      - "&7Blocks walked: &f{TOTAL}"
+    Permission: "bettereggs.egg.diamond-egg"
+    Textures:
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZmODhhMjVjNGIxMTRlODJhYmI1Y2U5OGNjZDViMmIxODZlY2Q2OGZkOGFiZjg1MjcwNjczYTNlOGI5MGE5In19fQ==
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM3NDZhZWMyNTg4NzQ4MGVlZDE3MzMwYzQzZWFiY2M1NDljMmJiOGNlNGYxNWJhM2M2NGE1MmIwNzE2NmVmIn19fQ==
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTI0MGExYTZlMjNjYjc4N2Q0ZGFmMTMzYWIyYzhiOWFiYWM0ZWZiODFlNzM5Y2FlYzU4YjNlOGVhNTQ5ODcifX19
+    Blocks: 1000
+    Auto-hatch: true
+    Messages:
+      No-permission: "&cYou are not allowed to open this egg :("
+      Open-nothing: "&aYou opened a diamond egg. You didn't find anything :("
+      Open-reward: "&aYou opened a diamond egg and received {AMOUNT} rewards. Check the floor just in case!"
+    Items:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_HELMET
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_CHESTPLATE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_LEGGINGS
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_BOOTS
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_SWORD
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_AXE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_PICKAXE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_BLOCK
+    Commands: []
+  legendary-egg:
+    Enabled: true
+    Name: Legendary Egg
+    Min-amount: 1
+    Max-amount: 1
+    Blocks: 1500
+    Messages:
+      No-permission: '&cYou are not allowed to open this egg :('
+      Open-nothing: '&aYou opened a Legendary Egg. You didn''t find anything :('
+      Open-reward: '&aYou opened a Legendary Egg and received some rewards. Check the floor just in case!'
+    Not-ready:
+      Lore:
+      - '&7This is a Legendary Egg.'
+      - '&r'
+      - '&7Total blocks: &f{TOTAL}'
+      - '&7Remaining blocks: &f{REMAINING}'
+      Displayname: '&6&lLegendary Egg &7({REMAINING})'
+    Ready:
+      Lore:
+      - '&6Egg is ready to hatch!'
+      - '&r'
+      - '&7Blocks walked: &f{TOTAL}'
+      Displayname: '&6&lLegendary Egg &7(Ready to hatch)'
+    Textures:
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY1NWM1MDVkN2YwMDEzNWI1ZjUyMjViNzVjZDkyZWQxMjIwMWNjOTVjNDFkZWVkOGE3N2RhOGZkNmI3Yjk2MyJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg5ZDY1YWM3NTg2YTI3YzBjNWQyMjZmZDYzY2I5ODliZWU3YzYyYTRlODBkZDFmMWFlYTJlMjJjMTYxMWNkZiJ9fX0=
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRmMDNhNzQ2YWFiZGMzYWJjNTE1OGVhYTEwNDY2YTlmYTc3MGMyYmIxZDRkYWI3NjQ0ODQzOThlOWY4ZDQifX19
+    - eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjk2OTIzYWQyNDczMTAwMDdmNmFlNWQzMjZkODQ3YWQ1Mzg2NGNmMTZjMzU2NWExODFkYzhlNmIyMGJlMjM4NyJ9fX0=
+    Gui-displayname: '&6&lLegendary Egg'
+    Permission: bettereggs.egg.legendary-egg
+    Items:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: NETHER_STAR
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_BLOCK
+      amount: 5
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: EMERALD_BLOCK
+      amount: 4
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_BLOCK
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: BEACON
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: IRON_BLOCK
+      amount: 4
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: GOLD_BLOCK
+      amount: 4
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_ORE
+      amount: 3
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: EMERALD_ORE
+      amount: 3
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: DIAMOND_ORE
+      amount: 2
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: EMERALD_ORE
+      amount: 2
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: SADDLE
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2578
+      type: GOLDEN_APPLE
+      amount: 32
+    Auto-hatch: true
+    Commands:
+    - "&a$10,000|money add {PLAYER} 10000"
+    - "&a$5000|money add {PLAYER} 5000"

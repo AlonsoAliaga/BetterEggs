@@ -1,0 +1,130 @@
+#          ___      _   _           ___
+#         | _ ) ___| |_| |_ ___ _ _| __|__ _ __ _ ___
+#         | _ \/ -_)  _|  _/ -_) '_| _|/ _` / _` (_-<
+#         |___/\___|\__|\__\___|_| |___\__, \__, /__/
+#                                     |___/|___/
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#              Support server: alonsoaliaga.com/discord
+#        Subscribe to my Youtube channel: alonsoaliaga.com/play
+#          Subscribe to my Twitch: alonsoaliaga.com/twitch
+#           Donate using Paypal: alonsoaliaga.com/donate
+Messages:
+  No-permission: "&cYou don't have permission to do this."
+  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
+  Invalid-player: "&cPlayer is not online!"
+  Invalid-amount: "&cAmount must be a valid positive amount higher than 0!"
+  Cannot-stacked: "&cYou cannot use stacked eggs.."
+  Corrupted-egg: "&cThis egg doesn't seem to be legal.. Delete it immediately!"
+  Disabled-world: "&cEggs cannot be hatched in this world :("
+  Create:
+    Already-exists: "&cSeems like there is already an egg with that name."
+    Egg-created: "&aYou created '{EGG}' egg. Edit loot with /bettereggs edit {EGG}"
+  Edit:
+    Cannot-edit-enabled: "&cThis egg seems to be enabled. You cannot edit enabled eggs. Disable it first with the command /bettereggs toggle {EGG}"
+    Invalid-egg: "&cThis egg doesn't seem to exist. Create it first with /bettereggs create {EGG}"
+    Edit-title: "&8Editing {EGG} loot"
+    Loot-updated: "&aEgg loot for '{EGG}' has been updated."
+    Already-editing: "&6Looks like someone else is editing this egg too. See changes in real time!"
+    Queue-edit: "&6Someone else is editing this egg loot. Changes will be saved when all players finish edit."
+    Max-items: "&cLoot can include up to 54 items. We removed the rest."
+    Max-items-commands: "&cLoot can include up to 54 rewards. Loading the first 54 (including items and commands)."
+  Delete:
+    Cannot-delete-enabled: "&cThis egg seems to be enabled. You cannot delete enabled eggs. Disable it first with the command /bettereggs toggle {EGG}"
+    Invalid-egg: "&cThis egg doesn't seem to exist. Create it first with /bettereggs create {EGG}"
+    Egg-deleted: "&cEgg '{EGG}' successfully deleted!"
+  Loot:
+    No-permission: "&cYou are not allowed to view this egg's loot :("
+    Invalid-egg: "&cThis egg doesn't seem to exists. Create it first with /bettereggs create {EGG}"
+    Invalid-item: "&cYou are not holding a valid egg in your hand. Try again!"
+    Disabled-egg: "&cThis egg is not currently enabled. Please try again later or contact a staff member."
+    Loot-title: "&8{EGG}'s loot"
+  Give:
+    Invalid-egg: "&cThis egg doesn't seem to exists or is disabled :("
+    Invalid-blocks-amount: "&cAmount of blocks is not valid. Must be greater than 0."
+    Success: "&aYou gave one '{EGG}' of '{BLOCKS}' blocks to {PLAYER}."
+    Received: "&6You received one '{EGG}'!"
+    Received-extra: "&6You received one '{EGG}'. Check the floor, some items might be there!"
+  Interact:
+    Disabled-egg: "&cThis egg loot is not available. Contact an administrator :("
+    Egg-not-ready:
+    - "&cThis egg is not ready to hatch. Walk {REMAINING} blocks to hatch."
+    Egg-ready:
+    - "&6You walked {BLOCKS} blocks and this egg is ready to hatch! Right click while sneaking to hatch."
+  Hatch:
+    Main-hand-only: "&cYou can open eggs using main hand only!"
+  #These messages will be sent in actionbar if possible.
+  Notifications:
+    Ready-to-hatch: "&a&lEgg is ready to hatch!"
+    Hatched-nothing: "&a&lAn egg hatched! &r&cYou didn't get any rewards :("
+    Hatched-reward: "&a&lAn egg hatched! &r&aYou received {AMOUNT} reward(s)!"
+  Toggle:
+    Invalid-egg: "&cThis egg doesn't seem to exist. Create it first with /bettereggs create {EGG}"
+    Corrupted-egg: "&cCouldn't load '{EGG}'. Removing section from eggs.yml is recommended!"
+    Egg-disabled: "&cYou have disabled '{EGG}'. Players cannot hatch this egg now."
+    Egg-enabled: "&aYou enabled '{EGG}'. Players can hatch this egg now."
+  Eggs:
+    Enabled: "&2&lEnabled"
+    Disabled: "&c&lDisabled"
+    Format: "&6➤&8 (&7{IDENTIFIER}&8) &e{EGG} &7: {STATUS}&r"
+    List:
+    - " &r"
+    - "&c&lEgg Status:&r"
+    - "{EGGS}"
+    - " &r"
+  Toggle-hatch:
+    Enabled: "&aAuto-hatch option has been enabled for {EGG}. Enable this egg using /bettereggs toggle {EGG}"
+    Disabled: "&cAuto-hatch option has been disabled for {EGG}. Enable this egg using /bettereggs toggle {EGG}"
+  Help:
+    Admin:
+    - "&4 /bettereggs create <egg-identifier> [blocks] &f- &cCreate new egg"
+    - "&4 /bettereggs edit <egg-identifier> &f- &cEdit egg loot"
+    - "&4 /bettereggs togglehatch <egg-identifier> &f- &cToggle auto-hatch status"
+    - "&4 /bettereggs loot <egg-identifier> &f- &cOpen egg loot"
+    - "&4 /bettereggs give <player> <egg-identifier> [blocks] &f- &cGive egg to player"
+    - "&4 /bettereggs eggs &f- &cCheck eggs status"
+    - "&4 /bettereggs toggle <egg-identifier> &f- &cToggle egg status"
+    - "&4 /bettereggs reload &f- &cReload configuration"
+    User:
+    - "&4 /bettereggs loot &f- &cCheck egg loot you are holding"
+
+Options:
+  #To apply changes for aliases you must RESTART the server.
+  #Plugman or similar plugins are NOT and will NEVER be supported.
+  #Use /reload or restart your server.
+  Aliases:
+  - "beggs"
+  - "betteregg"
+  #Enable only if developer asks you to do it.
+  Debug-mode: false
+  #If enabled, walked blocks will count in main hand.
+  Main-hand: true
+  #If enabled, walked blocks will count in off hand. Available only in 1.9+. For 1.8 having the egg in main hand IS required.
+  Off-hand: true
+  #Disable block count when player is flying
+  Allow-flight: true
+  #Eggs cannot be hatched in these worlds.
+  Disabled-worlds:
+  - "world_pvp"
+  - "world_plots"
+
+Permissions:
+  Admin: "bettereggs.admin"
+  #Permission to count blocks walked. Player needs to login again after receiving the permission.
+  Use: "none" #Example: "bettereggs.use"
+  #Permission to use "/bettereggs loot" to check eggs loot you are holding.
+  Loot: "none" #Example: "bettereggs.loot"
+  #Permission required to count blocks if player is flying. (Applies only if "Allow-flight" is set to true)
+  Fly: "none" #Example: "bettereggs.fly"
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "bettereggs.update"
+  #Message to send when update is found.
+  Message: "&4[BetterEggs] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"

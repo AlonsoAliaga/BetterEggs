@@ -1,0 +1,146 @@
+# ======================================================================================================================================
+# Message from developer: This translation was provided by a community member. I can't say it's 100% accurate.
+# ======================================================================================================================================
+#                ___      _   _           ___                                Our plugins: https://alonsoaliaga.com/plugins
+#               | _ ) ___| |_| |_ ___ _ _| __|__ _ __ _ ___                  Support server: https://alonsoaliaga.com/discord
+#               | _ \/ -_)  _|  _/ -_) '_| _|/ _` / _` (_-<                  Youtube: https://alonsoaliaga.com/play
+#               |___/\___|\__|\__\___|_| |___\__, \__, /__/                  Test server: plugins.alonsoaliaga.com
+#                            by AlonsoAliaga |___/|___/                      Twitch: https://alonsoaliaga.com/twitch
+#          Considering donating? https://alonsoaliaga.com/donate             Thanks for using my plugin! <3
+Messages:
+  No-permission: "&cBunu yapmak için yetkin yok."
+  Reloaded: "&aAyarlar yeniden başlatıldı!"
+  Invalid-player: "&cOyuncu aktif değil!"
+  Invalid-amount: "&c0'dan yüksek bir sayı girmek zorundasın!"
+  Cannot-stacked: "&cStacklenmiş yumurtaları kullanamazsın..."
+  Corrupted-egg: "&cBu yumurta gerçek gibi durmuyor.. Hem sil bunu!"
+  Disabled-world: "&cYumurta bu dünyada açılamaz :("
+  Create:
+    Already-exists: "&cGörünüşe göre bu isimde bir yumurta zaten var."
+    Egg-created: "&a'{EGG}' oluşturdun. Düzenlemek istiyorsan /bettereggs edit {EGG}"
+  Edit:
+    Cannot-edit-enabled: "&cYumurta aktif gibi görünüyor. Aktif yumurtaları değiştiremezsin. Önce /bettereggs toggle {EGG} komudu ile devre dışı bırak."
+    Invalid-egg: "&cBu yumurta çalışmıyor gibi. Önce /bettereggs create {EGG} komudu ile yeni yumurta oluştur."
+    Edit-title: "&8{EGG} ganimeti düzenleniyor."
+    Loot-updated: "&a'{EGG}' ganimeti güncellendi."
+    Already-editing: "&6Görünüşe bakılırsa başkasıda bu yumurtayı düzenliyor."
+    Queue-edit: "&6Başka biri bu yumurtayı düzenliyor. Değişiklikler bitince bütün oyuncularda içerik değişir."
+    Max-items: "&cEn fazla 54 item koyabilirsin. Geri kalanını kaldırdık."
+    Max-items-commands: "&cEn fazla 54 ödül kazanılabilir. İlk 54'ü yükleme (öğeler ve komutlar dahil)."
+  Delete:
+    Cannot-delete-enabled: "&cYumurta aktif gibi görünüyor. Aktif yumurtaları silemezsin. Önce /bettereggs toggle {EGG} komudu ile devre dışı bırak."
+    Invalid-egg: "&cBu yumurta çalışmıyor gibi. Önce /bettereggs create {EGG} komudu ile yeni yumurta oluştur."
+    Egg-deleted: "&c'{EGG}' başarılı bir şekilde silindi!"
+  Loot:
+    No-permission: "&cBu yumurtanın ganimetini görme izniniz yok :("
+    Invalid-egg: "&cBu yumurta çalışmıyor gibi. Önce /bettereggs create {EGG} komudu ile yeni yumurta oluştur."
+    Invalid-item: "&cElinizde geçerli bir yumurta tutmuyorsunuz. Tekrar deneyin!"
+    Disabled-egg: "&Bu yumurta şu anda etkin değil. Lütfen daha sonra tekrar deneyin veya bir personel ile iletişime geçin."
+    Loot-title: "&8{EGG} ganimeti."
+  Give:
+    Invalid-egg: "&cBu yumurta yok gibi görünüyor veya devre dışı :("
+    Invalid-blocks-amount: "&cBlok miktarı geçerli değil. 0'dan büyük olmalıdır."
+    Success: "&6{PLAYER} tarafından bir adet &2{BLOCKS} blokluk &f&l{EGG} &6aldın."
+    Received: "&6Bir tane '{EGG}' aldın!"
+    Received-extra: "&6Bir tane '{EGG}' aldın. Çantayı kontrol edin, bazı eşyalar orada olabilir!"
+  Interact:
+    Disabled-egg: "&cBu yumurta ganimeti mevcut değil. Bir yöneticiyle iletişim kurun :("
+    Egg-not-ready:
+    - "&cYumurta açılmaya hazır değil. Açılmasına kalan blok sayısı {REMAINING}."
+    Egg-ready:
+    - "&6{BLOCKS} blok yürüdün yumurta artık açılmaya hazır! Shift sağ tık yaparak açabilirsin."
+  Hatch:
+    Main-hand-only: "&cYumurtayı sadece sağ elinde açabilirsin!"
+  #These messages will be sent in actionbar if possible.
+  Notifications:
+    Ready-to-hatch: "&a&lYumurta açılmaya hazır!"
+    Hatched-nothing: "&a&lYumurtayı açtın. &r&cAma ödül kazanamadın :("
+    Hatched-reward: "&a&lAn egg hatched! &r&aYou received {AMOUNT} reward(s)!"
+  Toggle:
+    Invalid-egg: "&cBu yumurta çalışmıyor gibi. Önce /bettereggs create {EGG} komudu ile yeni yumurta oluştur."
+    Corrupted-egg: "&c'{EGG}' yüklenemedi. egg.yml'den bölümün kaldırılması önerilir!"
+    Egg-disabled: "&c'{EGG}' devre dışı bıraktınız. Oyuncular artık bu yumurtayı açamaz."
+    Egg-enabled: "&a'{EGG}' özelliğini etkinleştirdiniz. Oyuncular artık bu yumurtayı açabilir."
+  Eggs:
+    Enabled: "&2&lAktif"
+    Disabled: "&c&lKapalı"
+    Format: "&6➤&8 (&7{IDENTIFIER}&8) &e{EGG} &7: {STATUS}&r"
+    List:
+    - " &r"
+    - "&c&lYumurta Durumu:&r"
+    - "{EGGS}"
+    - " &r"
+  Toggle-hatch:
+    Enabled: "&aAuto-hatch seçeneği {EGG} için etkinleştirildi. Bu yumurtayı /bettereggs toggle {EGG} kullanarak etkinleştirin"
+    Disabled: "&cAuto-hatch seçeneği {EGG} için devre dışı bırakıldı. Bu yumurtayı /bettereggs toggle {EGG} kullanarak etkinleştirin"
+  Help:
+    Admin:
+    - "&4 /bettereggs create <egg-identifier> [blocks] &f- &cYeni yumurta oluşturmak."
+    - "&4 /bettereggs edit <egg-identifier> &f- &cYumurtanın ganimeti ayarlamak."
+    - "&4 /bettereggs togglehatch <egg-identifier> &f- &cOtomatik açılma durumu."
+    - "&4 /bettereggs loot <egg-identifier> &f- &cYumurtanın ganimetini açmak."
+    - "&4 /bettereggs give <player> <egg-identifier> [blocks] &f- &cOyuncuya yumurta vermek."
+    - "&4 /bettereggs eggs &f- &cYumurtaların drumunu kontrol etmek."
+    - "&4 /bettereggs toggle <egg-identifier> &f- &cYumurta durumunu değiştirmek."
+    - "&4 /bettereggs reload &f- &cPlugini yeniden başlatmak."
+    User:
+    - "&4 /bettereggs loot &f- &cElinizde tuttuğunuz yumurta ganimetini kontrol edin"
+
+Options:
+  #To apply changes for aliases you must RESTART the server.
+  #Plugman or similar plugins are NOT and will NEVER be supported.
+  #Use /reload or restart your server.
+  Aliases:
+  - "beggs"
+  - "betteregg"
+  #Enable only if developer asks you to do it.
+  Debug-mode: false
+  #If enabled, walked blocks will count in main hand.
+  Main-hand: true
+  #If enabled, walked blocks will count in off hand. Available only in 1.9+. For 1.8 having the egg in main hand IS required.
+  Off-hand: true
+  #Allow block count when player is flying
+  Allow-flight: true
+  #Allow block count when player is gliding.
+  Allow-gliding: true
+  #Eggs cannot be hatched in these worlds.
+  Disabled-worlds:
+  - "world_pvp"
+  - "world_plots"
+  WorldGuard:
+    Warning:
+    - "Enabled:"
+    - " Should the plugin check WorldGuard regions? I recommend to not enable this feature unless IT IS necessary."
+    - " This plugin makes a check every second so it MIGHT impact in your server performance. If so, please disable and"
+    - " use only Disabled-worlds feature. If disabled WorldGuard regions and flags will be ignored!"
+    - "Default flag:"
+    - " This is the default behavior if the flag is not specified BUT you are inside in a WorldGuard region."
+    - "  true - Players can hatch eggs."
+    - "  false - Players cannot hatch eggs."
+    #Should we enable worldguard support? I RECOMMEND TO LEAVE THIS DISABLED.
+    #Remember this plugin makes a check every second to update egg item so it MIGHT affect your server.
+    Enabled: false
+    Default-flag: true
+
+Permissions:
+  Admin: "bettereggs.admin"
+  #Permission to count blocks walked. Player needs to login again after receiving the permission.
+  Use: "none" #Example: "bettereggs.use"
+  #Permission to use "/bettereggs loot" to check eggs loot you are holding.
+  Loot: "none" #Example: "bettereggs.loot"
+  #Permission required to count blocks if player is flying. (Applies only if "Allow-flight" is set to true)
+  Fly: "none" #Example: "bettereggs.fly"
+  #Permission required to count blocks if player is gliding (whe using elytras). (Applies only if "Allow-gliding" is set to true)
+  Glid: "none" #Example: "bettereggs.glid"
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "bettereggs.update"
+  #Message to send when update is found.
+  Message: "&4[BetterEggs] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"

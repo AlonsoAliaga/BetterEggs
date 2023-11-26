@@ -1,14 +1,9 @@
-#          ___      _   _           ___
-#         | _ ) ___| |_| |_ ___ _ _| __|__ _ __ _ ___
-#         | _ \/ -_)  _|  _/ -_) '_| _|/ _` / _` (_-<
-#         |___/\___|\__|\__\___|_| |___\__, \__, /__/
-#                                     |___/|___/
-#                           by AlonsoAliaga
-#          https://www.spigotmc.org/resources/authors/281176/
-#              Support server: alonsoaliaga.com/discord
-#        Subscribe to my Youtube channel: alonsoaliaga.com/play
-#          Subscribe to my Twitch: alonsoaliaga.com/twitch
-#           Donate using Paypal: alonsoaliaga.com/donate
+#                ___      _   _           ___                                Our plugins: https://alonsoaliaga.com/plugins
+#               | _ ) ___| |_| |_ ___ _ _| __|__ _ __ _ ___                  Support server: https://alonsoaliaga.com/discord
+#               | _ \/ -_)  _|  _/ -_) '_| _|/ _` / _` (_-<                  Youtube: https://alonsoaliaga.com/play
+#               |___/\___|\__|\__\___|_| |___\__, \__, /__/                  Test server: plugins.alonsoaliaga.com
+#                            by AlonsoAliaga |___/|___/                      Twitch: https://alonsoaliaga.com/twitch
+#          Considering donating? https://alonsoaliaga.com/donate             Thanks for using my plugin! <3
 Messages:
   No-permission: "&cYou don't have permission to do this."
   Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
@@ -101,12 +96,28 @@ Options:
   Main-hand: true
   #If enabled, walked blocks will count in off hand. Available only in 1.9+. For 1.8 having the egg in main hand IS required.
   Off-hand: true
-  #Disable block count when player is flying
+  #Allow block count when player is flying
   Allow-flight: true
+  #Allow block count when player is gliding.
+  Allow-gliding: true
   #Eggs cannot be hatched in these worlds.
   Disabled-worlds:
   - "world_pvp"
   - "world_plots"
+  WorldGuard:
+    Warning:
+    - "Enabled:"
+    - " Should the plugin check WorldGuard regions? I recommend to not enable this feature unless IT IS necessary."
+    - " This plugin makes a check every second so it MIGHT impact in your server performance. If so, please disable and"
+    - " use only Disabled-worlds feature. If disabled WorldGuard regions and flags will be ignored!"
+    - "Default flag:"
+    - " This is the default behavior if the flag is not specified BUT you are inside in a WorldGuard region."
+    - "  true - Players can hatch eggs."
+    - "  false - Players cannot hatch eggs."
+    #Should we enable worldguard support? I RECOMMEND TO LEAVE THIS DISABLED.
+    #Remember this plugin makes a check every second to update egg item so it MIGHT affect your server.
+    Enabled: false
+    Default-flag: true
 
 Permissions:
   Admin: "bettereggs.admin"
@@ -116,6 +127,8 @@ Permissions:
   Loot: "none" #Example: "bettereggs.loot"
   #Permission required to count blocks if player is flying. (Applies only if "Allow-flight" is set to true)
   Fly: "none" #Example: "bettereggs.fly"
+  #Permission required to count blocks if player is gliding (when using elytras). (Applies only if "Allow-gliding" is set to true)
+  Glid: "none" #Example: "bettereggs.glid"
 
 Updates:
   #Auto update configuration? Enabling will delete comments.

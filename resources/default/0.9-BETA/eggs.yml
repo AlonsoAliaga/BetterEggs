@@ -1,5 +1,4 @@
-#This is an example with 4 default eggs configurations.
-#You are meant to modify all of them to fit your server needs.
+#This config might not work in new version due to item serialization change between versions.
 Eggs:
   food-egg:
     Enabled: true
